@@ -162,10 +162,7 @@ export class GenericEditorBase extends React.Component<InternalProps> {
 
     render() {
         return <textarea
-            placeholder={
-                this.props.isReadOnlyEditor ? null :
-                'Type translation and press Enter to save'
-            }
+            placeHolder={ this.props.isReadOnlyEditor ? null : 'Type translation and press Enter to save' }
             readOnly={ this.props.isReadOnlyEditor }
             ref={ this.textarea }
             value={ this.props.editor.translation }
